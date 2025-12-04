@@ -50,7 +50,7 @@ h2 {
     box-shadow: 0 0 5px rgba(29, 78, 216, 0.4);
 }
 
-button {
+.button {
     width: 100%;
     padding: 13px;
     margin-top: 20px;
@@ -63,7 +63,7 @@ button {
     transition: .2s;
 }
 
-button:hover {
+.button:hover {
     background: #153fad;
 }
 
