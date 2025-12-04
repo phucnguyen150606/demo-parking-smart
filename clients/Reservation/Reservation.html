@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../Reservation/Reservation.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Đặt chỗ đậu xe</h2>
+
+        <!-- Chọn bãi đỗ xe -->
+        <label>Bãi đỗ xe:</label>
+        <select id="parkingSelect">
+        <option value="">-- Chọn bãi đỗ --</option>
+        <option value="P1">Bãi xe A</option>
+        <option value="P2">Bãi xe B</option>
+        <option value="P3">Bãi xe C</option>
+        </select>
+
+        <!-- Danh sách slot -->
+        <div id="slotsArea" class="slot-grid"></div>
+
+        <!-- Biển số xe -->
+        <input type="text" id="plate" placeholder="Biển số xe (VD: 59A-123.45)">
+
+        <!-- Nút đặt chỗ -->
+        <button onclick="reserveSlot()">Xác nhận đặt chỗ</button>
+    </div>
+    <script src="../Reservation/Reservation.js"></script>
+</body>
+
+</html>

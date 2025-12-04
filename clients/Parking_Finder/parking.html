@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../Parking_Finder/parking.css">
+</head>
+
+<body>
+    <h2>Tìm Bãi Đậu Xe</h2>
+
+    <div class="search-box">
+        <input type="text" id="search" placeholder="Tìm bãi theo tên hoặc địa chỉ..." onkeyup="filterLot()">
+    </div>
+
+    <div class="lot-list" id="lotList">
+
+        <!-- Bãi xe 1 -->
+        <div class="lot-item" data-lot="P1">
+            <h3>Bãi xe Trung Tâm</h3>
+            <p>Địa chỉ: 123 Lê Lợi, Quận 1</p>
+            <p>Số chỗ trống: <b>35 / 200</b></p>
+            <div class="status-box green">Còn chỗ</div>
+            <button class="btn-view" onclick="viewDetail('P1')">Xem chi tiết</button>
+        </div>
+
+        <!-- Bãi xe 2 -->
+        <div class="lot-item" data-lot="P2">
+            <h3>Bãi xe Nguyễn Văn Cừ</h3>
+            <p>Địa chỉ: 45 Nguyễn Văn Cừ, Quận 5</p>
+            <p>Số chỗ trống: <b>0 / 120</b></p>
+            <div class="status-box red">Hết chỗ</div>
+            <button class="btn-view" onclick="viewDetail('P2')">Xem chi tiết</button>
+        </div>
+
+        <!-- Bãi xe 3 -->
+        <div class="lot-item" data-lot="P3">
+            <h3>Bãi xe Bệnh viện 115</h3>
+            <p>Địa chỉ: 527 Sư Vạn Hạnh, Quận 10</p>
+            <p>Số chỗ trống: <b>85 / 300</b></p>
+            <div class="status-box green">Còn chỗ</div>
+            <button class="btn-view" onclick="viewDetail('P3')">Xem chi tiết</button>
+        </div>
+
+    </div>
+
+    <script src="parking.js"></script>
+
+
+    <script src="../Parking_Finder/parking.js"></script>
+</body>
+
+</html>

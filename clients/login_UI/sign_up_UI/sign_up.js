@@ -17,6 +17,19 @@ function goLogin(event) {
         alert("Mật khẩu và xác nhận mật khẩu không khớp!");
         return; // 🔥 Dừng hàm
     }
+
+    if (!email) {
+        alert("Vui lòng nhập email!");
+        return;
+    }
+
+    // Kiểm tra email hợp lệ (cơ bản)
+    const regexEmail = /\S+@\S+\.\S+/;
+    if (!regexEmail.test(email)) {
+        alert("Email không hợp lệ!");
+        return;
+    }
+
     // Chuyển trang
     window.location.href = "../login/login.html";
 

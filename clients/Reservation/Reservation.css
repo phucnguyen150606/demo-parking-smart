@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #0f1c30;
+    color: white;
+    height: 100vh;
+}
+
+.container {
+    width: 420px;
+    background: white;
+    color: #0f1c30;
+    padding: 25px;
+    margin: 50px auto;
+    border-radius: 18px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#parkingSelect {
+    width: 100%;
+    padding: 12px;
+    margin-top: 12px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+}
+
+input {
+    width: 95%;
+    padding: 12px;
+    margin-top: 12px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: #1d4ed8;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 17px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1239a5;
+}
+
+.slot-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.slot {
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+    background: #d9e4ff;
+    color: #0f1c30;
+    transition: 0.25s;
+}
+
+.slot.busy {
+    background: #ff9d9d;
+    cursor: not-allowed;
+}
+
+.slot.active {
+    background: #1d4ed8;
+    color: white;
+}
