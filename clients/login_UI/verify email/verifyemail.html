@@ -12,16 +12,18 @@
     <div class="container">
         <h2>Quên Mật Khẩu</h2>
 
-        <form action="forgot_process.php" method="POST">
-            <label>Nhập email để đặt lại mật khẩu:</label>
-            <input type="email" name="email" placeholder="Email của bạn" required>
+        <form action="forgot.php" method="POST" onsubmit="goReset(event)">
+            <div class="input-group">
+                <input type="email" name="email" class="email" placeholder="Nhập email đã đăng ký" required>
+            </div>
 
-            <button type="submit">Gửi yêu cầu</button>
-
+            <input type="submit" value="Gửi yêu cầu" class="button">
             <div class="back">
                 <a href="../login/login.html">← Quay lại đăng nhập</a>
             </div>
         </form>
+        <script src="../verify email/verifyemail.js"></script>
+
     </div>
 </body>
 
