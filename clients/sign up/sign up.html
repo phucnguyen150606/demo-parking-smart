@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../sign up/sign up.css">
+</head>
+
+<body>
+    <div class="register-box">
+        <h2>Tạo tài khoản</h2>
+
+        <form action="register.php" method="POST">
+
+            <div class="input-group">
+                <input type="text" name="fullname" placeholder="Họ và tên" required>
+                <input type="text" name="username" placeholder="Tên đăng nhập" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="password" name="password" placeholder="Mật khẩu" required>
+                <input type="password" name="confirm" placeholder="Nhập lại mật khẩu" required>
+            </div>
+
+            <button type="submit">Đăng ký</button>
+        </form>
+
+        <a href="../login/login.html">Đã có tài khoản? Đăng nhập</a>
+</body>
+
+</html>
