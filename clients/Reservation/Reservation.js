@@ -58,6 +58,7 @@ function reserveSlot() {
     if (!selectedSlot) return alert("Vui lòng chọn ô đỗ xe!");
     if (!plate) return alert("Vui lòng nhập biển số xe!");
 
+    // Thông báo đặt chỗ thành công
     alert(
         "Đặt chỗ thành công!\n" +
         "Bãi: " + parkingId + "\n" +
@@ -65,5 +66,7 @@ function reserveSlot() {
         "Biển số: " + plate
     );
 
-    // window.location.href = "../qr/qr_generate.html";
+    // Chuyển sang trang thanh toán, truyền dữ liệu qua URL
+    const url = `../Payment/payment.html?parking=${parkingId}&slot=${selectedSlot}&plate=${encodeURIComponent(plate)}`;
+    window.location.href = url;
 }
