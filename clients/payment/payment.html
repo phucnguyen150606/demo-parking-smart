@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -11,22 +11,16 @@
 <body>
     <div class="payment-container">
         <h2>Thanh toán dịch vụ</h2>
-
-        <!-- Thông tin đặt chỗ -->
         <section>
             <h3>Thông tin đặt chỗ</h3>
             <p id="info"></p>
         </section>
-
-        <!-- Nhập thời gian đậu -->
         <section>
             <h3>Thời gian đậu</h3>
             <input type="number" id="parkingTime" min="1" placeholder="Số giờ">
-            <button id="updatePrice">Cập nhật giá tiền</button>
+            <button id="updatePrice"> <strong>Cập nhật giá tiền</strong></button>
             <p id="priceDisplay">Chưa tính toán</p>
         </section>
-
-        <!-- Phương thức thanh toán bằng logo -->
         <section id="paymentMethods" style="display:none;">
             <h3>Phương thức thanh toán</h3>
             <div class="methods-row">
@@ -44,8 +38,6 @@
                 </div>
             </div>
         </section>
-
-        <!-- Nút thanh toán -->
         <button id="payBtn" disabled>Thanh toán</button>
     </div>
 
