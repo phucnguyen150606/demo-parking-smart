@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanh toán - Bãi đậu xe thông minh</title>
+    <link rel="stylesheet" href="payment.css">
+</head>
+
+<body>
+    <div class="payment-container">
+        <h2>Thanh toán dịch vụ</h2>
+
+        <!-- Thông tin đặt chỗ -->
+        <section>
+            <h3>Thông tin đặt chỗ</h3>
+            <p id="info"></p>
+        </section>
+
+        <!-- Nhập thời gian đậu -->
+        <section>
+            <h3>Thời gian đậu</h3>
+            <input type="number" id="parkingTime" min="1" placeholder="Số giờ">
+            <button id="updatePrice">Cập nhật giá tiền</button>
+            <p id="priceDisplay">Chưa tính toán</p>
+        </section>
+
+        <!-- Phương thức thanh toán bằng logo -->
+        <section id="paymentMethods" style="display:none;">
+            <h3>Phương thức thanh toán</h3>
+            <div class="methods-row">
+                <div class="method" data-method="bank">
+                    <img src="images/bank.png" alt="Ngân hàng">
+                    <p>Ngân hàng</p>
+                </div>
+                <div class="method" data-method="momo">
+                    <img src="images/momo.png" alt="MoMo">
+                    <p>MoMo</p>
+                </div>
+                <div class="method" data-method="zalo">
+                    <img src="images/Logo-ZaloPay-Square.webp" alt="ZaloPay">
+                    <p>ZaloPay</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Nút thanh toán -->
+        <button id="payBtn" disabled>Thanh toán</button>
+    </div>
+
+    <script src="payment.js"></script>
+</body>
+
+</html>
