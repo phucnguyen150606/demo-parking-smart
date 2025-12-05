@@ -40,3 +40,7 @@ payBtn.addEventListener("click", function() {
         alert(`Thanh toán thành công qua ${selectedMethod.toUpperCase()}!`);
     }
 });
+
+function goHome() {
+    window.location.href = "../Main_UI/main.html";
+}

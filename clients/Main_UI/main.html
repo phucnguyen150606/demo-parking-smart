@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../Main_UI/main.css">
+</head>
+
+<body>
+    <div class="header">
+        🚗 Smart Parking Dashboard
+    </div>
+
+    <div class="container">
+
+        <div class="card" onclick="openPage('../Parking_Finder/parking.html')">
+            <h2>Parking Finder</h2>
+            <p>Tìm bãi đỗ xe gần bạn và xem số lượng chỗ trống.</p>
+        </div>
+
+        <div class="card" onclick="openPage('../Reservation/reservation.html')">
+            <h2>Reservation</h2>
+            <p>Đặt chỗ trước theo bãi và ô đỗ.</p>
+        </div>
+
+        <div class="card" onclick="openPage('../payment/payment.html')">
+            <h2>Payment</h2>
+            <p>Thanh toán phí đỗ xe.</p>
+        </div>
+        <!-- 
+        <div class="card" onclick="openPage('notification.html')">
+            <h2>Notification</h2>
+            <p>Thông báo đặt chỗ, thanh toán, trạng thái xe.</p>
+        </div> -->
+
+    </div>
+    <script src="../Main_UI/main.js"></script>
+</body>
+
+</html>

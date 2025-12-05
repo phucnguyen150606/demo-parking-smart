@@ -83,3 +83,16 @@ button:hover:enabled {
     border-color: #4CAF50;
     background: #e6ffe6;
 }
+
+.home-btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background: #3498db;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    text-decoration: none;
+}

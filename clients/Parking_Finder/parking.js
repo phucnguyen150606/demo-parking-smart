@@ -1,3 +1,6 @@
+function goHome() {
+    window.location.href = "../Main_UI/main.html";
+}
 // Hàm bỏ dấu tiếng Việt
 function removeVietnamese(str) {
     return str.normalize("NFD")

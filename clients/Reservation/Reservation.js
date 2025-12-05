@@ -70,3 +70,7 @@ function reserveSlot() {
     const url = `../Payment/payment.html?parking=${parkingId}&slot=${selectedSlot}&plate=${encodeURIComponent(plate)}`;
     window.location.href = url;
 }
+
+function goHome() {
+    window.location.href = "../Main_UI/main.html";
+}
