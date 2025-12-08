@@ -15,8 +15,27 @@ body {
     font-weight: bold;
 }
 
+.left-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
 .logo {
     font-size: 22px;
+}
+
+.search-box input {
+    padding: 6px 10px;
+    border-radius: 20px;
+    border: none;
+    width: 150px;
+}
+
+.right-header {
+    display: flex;
+    align-items: center;
+    gap: 25px;
 }
 
 .nav a {
@@ -30,27 +49,10 @@ body {
     text-decoration: underline;
 }
 
-.search-box input {
-    padding: 6px 10px;
-    border-radius: 20px;
-    border: none;
-    width: 280px;
-}
-
-.account a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-}
-
-.account a:hover {
-    text-decoration: underline;
-}
-
 .container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 18px;
+    gap: 15px;
     padding: 40px;
     backdrop-filter: blur(4px);
 }
@@ -91,6 +93,7 @@ body {
 .slideshow-container img {
     width: 95%;
     height: 50%;
+    margin-left: 2%;
     border-radius: 10px;
     object-fit: cover;
     position: absolute;
@@ -119,12 +122,11 @@ body {
     .header {
         flex-direction: column;
         text-align: center;
-        gap: 12px;
+        gap: 10px;
         padding: 20px;
     }
     .nav {
         display: flex;
-        flex-direction: column;
         gap: 8px;
         font-size: 16px;
     }
@@ -134,15 +136,16 @@ body {
     /* Container */
     .container {
         padding: 15px;
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 2fr);
         gap: 15px;
     }
     /* Card */
     .card .icon {
-        font-size: 32px;
+        font-size: 25px;
     }
     .card {
-        padding: 20px;
+        height: 70%;
+        padding: 15px;
     }
     .card h2 {
         font-size: 18px;
