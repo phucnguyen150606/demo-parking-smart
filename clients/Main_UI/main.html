@@ -10,22 +10,41 @@
 
 <body>
     <div class="header">
-        🚗 Smart Parking Dashboard
+        <div class="left-header">
+            <div class="logo">
+                🚗 Smart Parking Dashboard
+            </div>
+            <div class="search-box">
+                <input type="text" placeholder="Tìm kiếm..." />
+            </div>
+        </div>
+        <div class="right-header">
+            <div class="nav">
+                <a href="#">Trang chủ</a>
+                <a href="#">Giới thiệu</a>
+                <a href="#">Liên hệ</a>
+                <a href="#">Tài khoản</a>
+            </div>
+
+        </div>
     </div>
 
     <div class="container">
 
         <div class="card" onclick="openPage('../Parking_Finder/parking.html')">
+            <div class="icon">🅿️</div>
             <h2>Parking Finder</h2>
-            <p>Tìm bãi đỗ xe gần bạn và xem số lượng chỗ trống.</p>
+            <p>Tìm bãi đỗ xe gần bạn.</p>
         </div>
 
         <div class="card" onclick="openPage('../Reservation/reservation.html')">
+            <div class="icon">📅</div>
             <h2>Reservation</h2>
-            <p>Đặt chỗ trước theo bãi và ô đỗ.</p>
+            <p>Đặt chỗ trước theo bãi.</p>
         </div>
 
         <div class="card" onclick="openPage('../payment/payment.html')">
+            <div class="icon">💳</div>
             <h2>Payment</h2>
             <p>Thanh toán phí đỗ xe.</p>
         </div>
@@ -36,6 +55,13 @@
         </div> -->
 
     </div>
+    <div class="slideshow-container">
+        <img src="../Main_UI/img/parking_img1.png" class="slide">
+        <img src="../Main_UI/img/parking_img2.png" class="slide">
+        <img src="../Main_UI/img/parking_img3.jpg" class="slide">
+
+    </div>
+
     <script src="../Main_UI/main.js"></script>
 </body>
 
