@@ -13,8 +13,14 @@
         <h2>Đăng nhập</h2>
 
         <form action="login.php" method="POST" onsubmit="login(event)">
-            <input type="text" name="username" placeholder="Tên đăng nhập" required>
-            <input type="password" name="password" placeholder="Mật khẩu" required>
+            <div class="input-group">
+                <input type="text" name="username" placeholder="Tên đăng nhập" required>
+            </div>
+
+            <div class="input-group">
+                <input type="password" name="password" placeholder="Mật khẩu" required>
+            </div>
+
             <input type="submit" value="Đăng nhập" class="button">
         </form>
 
