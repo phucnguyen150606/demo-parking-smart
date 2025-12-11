@@ -5,11 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../login/login.css">
+    <link rel="stylesheet" href="../login/css/login.css">
 </head>
 
 <body>
+    <div class="bg-mask-vertical"></div>
     <div class="login-box">
+        <div class="logo"><img src="../login/img/logo.png" alt=""></div>
         <h2>Đăng nhập</h2>
 
         <form action="login.php" method="POST" onsubmit="login(event)">
@@ -20,8 +22,13 @@
             <div class="input-group">
                 <input type="password" name="password" placeholder="Mật khẩu" required>
             </div>
-
-            <input type="submit" value="Đăng nhập" class="button">
+            <button class="neon-frame-btn">
+            Đăng nhập
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            </button>
         </form>
 
         <a href="../verify email/verifyemail.html">Quên mật khẩu?</a>
@@ -29,6 +36,7 @@
         <a href="../sign_up_UI/sign_up.html" class="signup">Đăng ký</a>
 
     </div>
+
     <script src="../login/login.js"></script>
 </body>
 

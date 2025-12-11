@@ -1,0 +1,25 @@
+.menu a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 3px;
+    background: white;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+
+.menu a:hover::after {
+    width: 100%;
+}
+
+.method:hover {
+    border-color: #4CAF50;
+    background: #f0fff0;
+}
+
+.method.active {
+    border-color: #4CAF50;
+    background: #e6ffe6;
+}
