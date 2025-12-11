@@ -1,14 +1,9 @@
 function openPage(page) {
     window.location.href = page;
 }
-let index = 0;
-const slides = document.querySelectorAll(".slide");
-
-function showSlide() {
-    slides.forEach(slide => slide.classList.remove("active"));
-    slides[index].classList.add("active");
-    index = (index + 1) % slides.length;
-}
-
-showSlide();
-setInterval(showSlide, 3000); // 3 giây đổi ảnh
+var swiper = new Swiper('.swiper', {
+    loop: true,
+    autoplay: {
+        delay: 3000,
+    },
+});
