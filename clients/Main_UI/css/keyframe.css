@@ -8,3 +8,39 @@
         transform: scale(1);
     }
 }
+
+@keyframes neonTop {
+    from {
+        left: -100%;
+    }
+    to {
+        left: 100%;
+    }
+}
+
+@keyframes neonRight {
+    from {
+        top: -100%;
+    }
+    to {
+        top: 100%;
+    }
+}
+
+@keyframes neonBottom {
+    from {
+        right: -100%;
+    }
+    to {
+        right: 100%;
+    }
+}
+
+@keyframes neonLeft {
+    from {
+        bottom: -100%;
+    }
+    to {
+        bottom: 100%;
+    }
+}

@@ -5,10 +5,6 @@
     bottom: 0;
     width: 100%;
     height: 4px;
-    background: #e0e0e0;
-    transform: scaleX(0);
-    transform-origin: left;
-    border-radius: 4px;
 }
 
 .logo::before {
@@ -19,36 +15,14 @@
     height: 4px;
     width: 40%;
     background: #1e90ff;
+    box-shadow: 0 0 20px #1e90ff;
     /* xanh dương */
     border-radius: 4px;
     animation: loadingRun 1.2s infinite ease-in-out;
 }
 
-.neon-input-wrapper {
-    position: relative;
-    display: inline-block;
-}
-
-.neon-input {
-    padding: 14px 0;
-    width: 300px;
-    font-size: 18px;
-    color: #fff;
-    background: #0d47a1;
-    border: none;
-    border-radius: 12px;
-    cursor: pointer;
-    position: relative;
-    z-index: 10;
-}
-
 
 /* 4 cạnh neon */
-
-.neon-input-wrapper span {
-    position: absolute;
-    display: block;
-}
 
 .neon-frame-btn {
     position: relative;
