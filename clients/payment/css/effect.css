@@ -1,13 +1,3 @@
-.bg-mask-vertical {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 400px;
-    background: url("../images/parking_img1.png") center/cover;
-    mask-image: linear-gradient(to bottom, black 40%, transparent 100%);
-    z-index: -1;
-}
-
 .logo::after {
     content: "";
     position: absolute;

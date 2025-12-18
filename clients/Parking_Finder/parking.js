@@ -21,9 +21,7 @@ function filterLot() {
     });
 }
 
-function viewDetail(lotId) {
-    window.location.href = "../reservation/reservation.html?lot=" + lotId;
-}
+
 
 // Bộ lọc tìm kiếm
 function filterLot() {

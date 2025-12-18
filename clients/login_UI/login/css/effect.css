@@ -21,51 +21,61 @@
     animation: loadingRun 1.2s infinite ease-in-out;
 }
 
-
-/* 4 cạnh neon */
-
-.neon-frame-btn {
+.button {
     position: relative;
-    padding: 14px 0;
     width: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.button {
+    width: 100%;
+    padding: 14px 0;
     font-size: 18px;
     color: #fff;
     background: #0d47a1;
     border: none;
     border-radius: 12px;
-    overflow: hidden;
     cursor: pointer;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 2;
 }
 
 
 /* 4 cạnh neon */
 
-.neon-frame-btn span {
+.button span {
     position: absolute;
     display: block;
+    pointer-events: none;
+    z-index: 0;
+    /* behind the button */
 }
 
 
 /* Cạnh trên */
 
-.neon-frame-btn span:nth-child(1) {
+.button span:nth-of-type(1) {
     top: 0;
-    left: -100%;
+    left: 0;
     width: 100%;
     height: 3px;
     background: linear-gradient(90deg, transparent, #00eaff);
+    transform: translateX(-100%);
     animation: neonTop 1.5s linear infinite;
 }
 
 
 /* Cạnh phải */
 
-.neon-frame-btn span:nth-child(2) {
-    top: -100%;
+.button span:nth-of-type(2) {
+    top: 0;
     right: 0;
     width: 3px;
     height: 100%;
     background: linear-gradient(180deg, transparent, #00eaff);
+    transform: translateY(-100%);
     animation: neonRight 1.5s linear infinite;
     animation-delay: 0.375s;
 }
@@ -73,29 +83,64 @@
 
 /* Cạnh dưới */
 
-.neon-frame-btn span:nth-child(3) {
+.button span:nth-of-type(3) {
     bottom: 0;
-    right: -100%;
+    left: 0;
     width: 100%;
     height: 3px;
     background: linear-gradient(270deg, transparent, #00eaff);
+    transform: translateX(-100%);
     animation: neonBottom 1.5s linear infinite;
     animation-delay: 0.75s;
 }
 
-
-/* Cạnh trái */
-
-.neon-frame-btn span:nth-child(4) {
-    bottom: -100%;
+.button span:nth-of-type(4) {
+    bottom: 0;
     left: 0;
     width: 3px;
     height: 100%;
     background: linear-gradient(0deg, transparent, #00eaff);
+    transform: translateY(-100%);
     animation: neonLeft 1.5s linear infinite;
     animation-delay: 1.125s;
 }
 
 a:hover {
     text-decoration: underline;
+}
+
+@keyframes neonTop {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(100%);
+    }
+}
+
+@keyframes neonRight {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(100%);
+    }
+}
+
+@keyframes neonBottom {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes neonLeft {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(-100%);
+    }
 }

@@ -6,11 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Đăng nhập</title>
-    <link rel="stylesheet" href="../login/login.css">
+    <link rel="stylesheet" href="../login/css/login.css">
 
 </head>
+
 <body>
-    <div class="bg-mask-vertical"></div>
+
+    <div class="bg-mask-vertical">
+        <div class="overlay"></div>
+    </div>
     <div class="login-box">
         <div class="logo"><img src="../login/img/logo.png" alt=""></div>
         <h2>Đăng nhập</h2>
@@ -19,7 +23,13 @@
         <form onsubmit="goLogin(event)">
             <input type="text" class="username" name="user_name" placeholder="Tên đăng nhập" required>
             <input type="password" class="password" name="password" placeholder="Mật khẩu" required>
-            <input type="submit" value="Đăng nhập" class="button">
+            <button class="button" id="neon-frame-btn">
+                Đăng nhập
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </form>
 
         <a href="../verify email/verifyemail.html">Quên mật khẩu?</a>
