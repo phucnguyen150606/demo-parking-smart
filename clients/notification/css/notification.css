@@ -24,7 +24,6 @@ body {
 .header {
     align-items: center;
     background-color: #3A8DFF;
-    padding: 9px 24px;
     color: white;
     font-size: 20px;
     font-weight: bold;
@@ -32,7 +31,7 @@ body {
 
 .menu {
     background: #3A8DFF;
-    padding: 12px 0;
+    padding: 21px 24px;
     text-align: center;
 }
 
