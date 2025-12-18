@@ -1,17 +1,38 @@
 @import url("keyframe.css");
-@import url("media.css");
 @import url("effect.css");
-body {
-    font-family: Arial, sans-serif;
-    padding: 0;
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
     background: #0f1c30;
-    min-height: 100vh;
+}
+
+.bg-mask-vertical {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 400px;
+    background: url("../images/parking_img1.png") center/cover;
+    mask-image: linear-gradient(to bottom, black 40%, transparent 100%);
+    filter: blur(3px);
+    z-index: -1;
+}
+
+.header {
+    align-items: center;
+    background-color: #3A8DFF;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .menu {
     background: #3A8DFF;
-    padding: 5px 0;
+    padding: 21px 24px;
     text-align: center;
 }
 
@@ -37,7 +58,7 @@ body {
 .payment-container {
     background: #fff;
     padding: 30px;
-    margin: 50px auto;
+    margin: 50px auto 0;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     width: 400px;
@@ -107,4 +128,73 @@ button:hover:enabled {
     width: 60px;
     height: 60px;
     border-radius: 50%;
+}
+
+@media (max-width: 1024px) {
+    .menu {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        padding: 21px 24px;
+        background: #0d6efd;
+        z-index: 999;
+    }
+    .menu a {
+        flex-direction: column;
+        gap: 4px;
+    }
+    .payment-container {
+        margin: 150px auto 0;
+        padding: 40px 30px;
+    }
+    h2 {
+        font-size: 35px;
+    }
+    .payment-container p {
+        font-size: 20px;
+    }
+    input {
+        display: flex;
+        padding: 25px 10px 25px 10px;
+    }
+    #updatePrice {
+        padding: 20px;
+    }
+    #payBtn {
+        padding: 20px;
+    }
+}
+
+
+/* Tablet dọc + điện thoại lớn (<= 768px) */
+
+@media (max-width: 768px) {
+    .menu {
+        padding: 8px 0;
+    }
+    .menu a {
+        font-size: 13px;
+    }
+    .menu i {
+        font-size: 20px;
+    }
+}
+
+
+/* Điện thoại nhỏ (<= 480px) */
+
+@media (max-width: 480px) {
+    .menu {
+        padding: 6px 0;
+    }
+    .menu a {
+        font-size: 11px;
+    }
+    .menu i {
+        font-size: 22px;
+    }
+    /* Ẩn chữ – chỉ giữ icon */
+    .menu a span {
+        display: none;
+    }
 }

@@ -1,5 +1,4 @@
 @import url("keyframe.css");
-@import url("media.css");
 * {
     margin: 0;
     padding: 0;
@@ -18,6 +17,7 @@ body {
     height: 400px;
     background: url("../img/parking_img1.png") center/cover;
     mask-image: linear-gradient(to bottom, black 40%, transparent 100%);
+    filter: blur(3px);
     z-index: -1;
 }
 
@@ -72,9 +72,8 @@ body {
 
 .container {
     width: 100%;
-    margin: auto;
     max-width: 420px;
-    margin-top: 20px;
+    margin: 50px auto;
     background: #f5f6fa;
     border-radius: 20px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
@@ -157,4 +156,90 @@ body {
     font-size: 11px;
     color: #999;
     margin-top: 6px;
+}
+
+
+/* Màn hình <= 1024px (Tablet ngang) */
+
+@media (max-width: 1024px) {
+    .menu {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background: #0d6efd;
+        z-index: 999;
+    }
+    .menu a {
+        flex-direction: column;
+        gap: 4px;
+    }
+    .container {
+        margin: 100px auto 0;
+    }
+    /* tiêu đề */
+    .container .content-header {
+        font-size: 28px;
+        text-align: center;
+        padding: 10px 0;
+    }
+    /* filter buttons */
+    .filter-bar {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 12px;
+        flex-wrap: wrap;
+    }
+    .filter-bar button {
+        font-size: 12px;
+        padding: 6px 10px;
+        border-radius: 20px;
+    }
+    .filter-bar p {
+        font-size: 18px;
+    }
+    /* từng item */
+    .notification-item {
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+        padding: 12px;
+        border-radius: 12px;
+        margin-bottom: 10px;
+    }
+    /* icon */
+    .notification-item .icon {
+        font-size: 30px;
+        min-width: 34px;
+        text-align: center;
+    }
+    /* nội dung */
+    .notification-item .content h4 {
+        font-size: 22px;
+        margin-bottom: 4px;
+    }
+    .notification-item .content p {
+        font-size: 20px;
+        line-height: 1.4;
+    }
+    .notification-item .time p {
+        font-size: 18px;
+        margin-top: 4px;
+        opacity: 0.7;
+    }
+    /* tránh bị đè menu dưới */
+    body {
+        padding-bottom: 80px;
+    }
+}
+
+
+/* Điện thoại nhỏ (<= 480px) */
+
+@media (max-width: 480px) {
+    .menu a {
+        font-size: 12px;
+    }
+    .menu i {
+        font-size: 16px;
+    }
 }
