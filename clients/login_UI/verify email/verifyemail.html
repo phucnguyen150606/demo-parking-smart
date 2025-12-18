@@ -9,7 +9,9 @@
 </head>
 
 <body>
+    <div class="bg-mask-vertical"></div>
     <div class="container">
+        <div class="logo"><img src="../login/img/logo.png" alt=""></div>
         <h2>Quên Mật Khẩu</h2>
 
         <form action="forgot.php" method="POST" onsubmit="goReset(event)">
@@ -17,7 +19,13 @@
                 <input type="email" name="email" class="email" placeholder="Nhập email đã đăng ký" required>
             </div>
 
-            <input type="submit" value="Gửi yêu cầu" class="button">
+            <button class="neon-frame-btn">
+            Gửi yêu cầu
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            </button>
             <div class="back">
                 <a href="../login/login.html">← Quay lại đăng nhập</a>
             </div>

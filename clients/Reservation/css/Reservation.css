@@ -1,0 +1,169 @@
+@import url("keyframe.css");
+@import url("media.css");
+@import url("effect.css");
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #0f1c30;
+    color: white;
+    height: 100vh;
+}
+
+.bg-mask-vertical {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 400px;
+    background: url("../img/parking_img1.png") center/cover;
+    mask-image: linear-gradient(to bottom, black 40%, transparent 100%);
+    z-index: -1;
+}
+
+.menu {
+    background: #3A8DFF;
+    padding: 5px 0;
+    text-align: center;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.menu a {
+    color: white;
+    position: relative;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.container {
+    width: 420px;
+    background: white;
+    color: #0f1c30;
+    padding: 25px;
+    margin: 50px auto;
+    border-radius: 18px;
+    animation: scaleUp 0.5s ease;
+}
+
+.logo::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 4px;
+}
+
+.logo::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -12px;
+    height: 4px;
+    width: 40%;
+    background: #1e90ff;
+    box-shadow: 0 0 20px #1e90ff;
+    /* xanh dương */
+    border-radius: 4px;
+    animation: loadingRun 1.2s infinite ease-in-out;
+}
+
+.logo::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 4px;
+}
+
+.logo::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -12px;
+    height: 4px;
+    width: 40%;
+    background: #1e90ff;
+    box-shadow: 0 0 20px #1e90ff;
+    /* xanh dương */
+    border-radius: 4px;
+    animation: loadingRun 1.2s infinite ease-in-out;
+}
+
+.logo {
+    height: 80px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.container .logo {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#parkingSelect {
+    width: 100%;
+    padding: 12px;
+    margin-top: 12px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+}
+
+input {
+    width: 95%;
+    padding: 12px;
+    margin-top: 12px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: #1d4ed8;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 17px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.slot-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.slot {
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+    background: #d9e4ff;
+    color: #0f1c30;
+    transition: 0.25s;
+}
+
+.slot.busy {
+    background: #ff9d9d;
+    cursor: not-allowed;
+}

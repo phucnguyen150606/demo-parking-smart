@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background: #f0f2f5;
+    background: #0f1c30;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,8 +12,49 @@ body {
     background: white;
     padding: 25px;
     width: 350px;
+    text-align: center;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: scaleUp 0.5s ease;
+}
+
+.bg-mask-vertical {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 400px;
+    background: url("img/parking_img1.png") center/cover;
+    mask-image: linear-gradient(to bottom, black 40%, transparent 100%);
+    z-index: -1;
+}
+
+.logo::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 4px;
+}
+
+.logo::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -12px;
+    height: 4px;
+    width: 40%;
+    background: #1e90ff;
+    box-shadow: 0 0 20px #1e90ff;
+    /* xanh dương */
+    border-radius: 4px;
+    animation: loadingRun 1.2s infinite ease-in-out;
+}
+
+.logo {
+    height: 80px;
+    position: relative;
+    margin-bottom: 20px;
 }
 
 h2 {
@@ -29,19 +70,80 @@ input[type="email"] {
     border-radius: 5px;
 }
 
-.button {
-    width: 100%;
-    padding: 10px;
-    border: none;
-    background: #007bff;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
+
+/* 4 cạnh neon */
+
+.neon-frame-btn {
+    position: relative;
+    padding: 14px 0;
     margin-top: 10px;
+    width: 100%;
+    font-size: 18px;
+    color: #fff;
+    background: #0d47a1;
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    cursor: pointer;
 }
 
-.button:hover {
-    background: #0056b3;
+
+/* 4 cạnh neon */
+
+.neon-frame-btn span {
+    position: absolute;
+    display: block;
+}
+
+
+/* Cạnh trên */
+
+.neon-frame-btn span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, #00eaff);
+    animation: neonTop 1.5s linear infinite;
+}
+
+
+/* Cạnh phải */
+
+.neon-frame-btn span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #00eaff);
+    animation: neonRight 1.5s linear infinite;
+    animation-delay: 0.375s;
+}
+
+
+/* Cạnh dưới */
+
+.neon-frame-btn span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(270deg, transparent, #00eaff);
+    animation: neonBottom 1.5s linear infinite;
+    animation-delay: 0.75s;
+}
+
+
+/* Cạnh trái */
+
+.neon-frame-btn span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(0deg, transparent, #00eaff);
+    animation: neonLeft 1.5s linear infinite;
+    animation-delay: 1.125s;
 }
 
 .back {
@@ -52,4 +154,79 @@ input[type="email"] {
 .back a {
     text-decoration: none;
     color: #007bff;
+}
+
+@keyframes scaleUp {
+    from {
+        opacity: 0;
+        transform: scale(0.85);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes loadingRun {
+    0% {
+        left: 25%;
+    }
+    50% {
+        left: 40%;
+    }
+    /* chạy qua */
+    100% {
+        left: 25%;
+    }
+    /* chạy lại */
+}
+
+@keyframes loadingRun {
+    0% {
+        left: 25%;
+    }
+    50% {
+        left: 40%;
+    }
+    /* chạy qua */
+    100% {
+        left: 25%;
+    }
+    /* chạy lại */
+}
+
+@keyframes neonTop {
+    from {
+        left: -100%;
+    }
+    to {
+        left: 100%;
+    }
+}
+
+@keyframes neonRight {
+    from {
+        top: -100%;
+    }
+    to {
+        top: 100%;
+    }
+}
+
+@keyframes neonBottom {
+    from {
+        right: -100%;
+    }
+    to {
+        right: 100%;
+    }
+}
+
+@keyframes neonLeft {
+    from {
+        bottom: -100%;
+    }
+    to {
+        bottom: 100%;
+    }
 }

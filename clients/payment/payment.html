@@ -5,11 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thanh toán - Bãi đậu xe thông minh</title>
-    <link rel="stylesheet" href="payment.css">
+    <link rel="stylesheet" href="../payment/css/payment.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
+    <div class="bg-mask-vertical"></div>
+    <nav class="menu">
+        <ul>
+            <li><a href="../Main_UI/main.html"><i class="fa-solid fa-house"></i> Trang chủ</a></li>
+            <li><a href="#"><i class="fa-solid fa-circle-info"></i> Giới thiệu</a></li>
+            <li><a href="#"><i class="fa-solid fa-phone"></i> Liên hệ</a></li>
+            <li><a href="../notification/notification.html"><i class="fa-solid fa-bell"></i> Thông báo</a></li>
+            <li><a href="#"><i class="fa-solid fa-user"></i> Tài khoản</a></li>
+        </ul>
+    </nav>
     <div class="payment-container">
+        <div class="logo"><img src="images/logo.png" alt=""></div>
         <h2>Thanh toán dịch vụ</h2>
         <section>
             <h3>Thông tin đặt chỗ</h3>
@@ -38,8 +50,13 @@
                 </div>
             </div>
         </section>
-        <button id="payBtn" disabled>Thanh toán</button>
-        <div class="home-btn" onclick="goHome()">🏠 Trang chủ</div>
+        <button id="payBtn" disabled>
+            Thanh toán  
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
     </div>
 
     <script src="payment.js"></script>

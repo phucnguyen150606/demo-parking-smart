@@ -1,19 +1,54 @@
+@import url("keyframe.css");
+@import url("media.css");
+@import url("effect.css");
 body {
     font-family: Arial, sans-serif;
-    background: #f4f6f9;
+    padding: 0;
+    margin: 0;
+    background: #0f1c30;
+    min-height: 100vh;
+}
+
+.menu {
+    background: #3A8DFF;
+    padding: 5px 0;
+    text-align: center;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
     display: flex;
     justify-content: center;
+    gap: 40px;
+}
+
+.menu a {
+    color: white;
+    position: relative;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 600;
+    display: flex;
     align-items: center;
-    height: 100vh;
+    gap: 8px;
 }
 
 .payment-container {
     background: #fff;
     padding: 30px;
+    margin: 50px auto;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     width: 400px;
     text-align: center;
+    animation: scaleUp 0.5s ease;
+}
+
+.logo {
+    height: 80px;
+    position: relative;
+    margin-bottom: 20px;
 }
 
 h2,
@@ -72,27 +107,4 @@ button:hover:enabled {
     width: 60px;
     height: 60px;
     border-radius: 50%;
-}
-
-.method:hover {
-    border-color: #4CAF50;
-    background: #f0fff0;
-}
-
-.method.active {
-    border-color: #4CAF50;
-    background: #e6ffe6;
-}
-
-.home-btn {
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    background: #3498db;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    text-decoration: none;
 }

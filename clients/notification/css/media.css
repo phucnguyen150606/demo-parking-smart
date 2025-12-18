@@ -1,0 +1,39 @@
+/* Màn hình <= 1024px (Tablet ngang) */
+
+@media (max-width: 1024px) {
+    .menu {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background: #0d6efd;
+        z-index: 999;
+    }
+    .menu a {
+        flex-direction: column;
+        gap: 4px;
+    }
+}
+
+
+/* Tablet dọc + điện thoại lớn (<= 768px) */
+
+@media (max-width: 768px) {
+    .menu a {
+        font-size: 13px;
+    }
+    .menu i {
+        font-size: 17px;
+    }
+}
+
+
+/* Điện thoại nhỏ (<= 480px) */
+
+@media (max-width: 480px) {
+    .menu a {
+        font-size: 12px;
+    }
+    .menu i {
+        font-size: 16px;
+    }
+}

@@ -4,12 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../Reservation/Reservation.css">
+    <title>Đặt bãi đậu xe</title>
+    <link rel="stylesheet" href="../Reservation/css/Reservation.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
+    <div class="bg-mask-vertical"></div>
+    <nav class="menu">
+        <ul>
+            <li><a href="../Main_UI/main.html"><i class="fa-solid fa-house"></i> Trang chủ</a></li>
+            <li><a href="#"><i class="fa-solid fa-circle-info"></i> Giới thiệu</a></li>
+            <li><a href="#"><i class="fa-solid fa-phone"></i> Liên hệ</a></li>
+            <li><a href="../notification/notification.html"><i class="fa-solid fa-bell"></i> Thông báo</a></li>
+            <li><a href="#"><i class="fa-solid fa-user"></i> Tài khoản</a></li>
+        </ul>
+    </nav>
     <div class="container">
+        <div class="logo"><img src="img/logo.png" alt=""></div>
         <h2>Đặt chỗ đậu xe</h2>
 
         <!-- Chọn bãi đỗ xe -->
@@ -28,8 +40,13 @@
         <input type="text" id="plate" placeholder="Biển số xe (VD: 59A-123.45)">
 
         <!-- Nút đặt chỗ -->
-        <button onclick="reserveSlot()">Xác nhận đặt chỗ</button>
-        <div class="home-btn" onclick="goHome()">🏠 Trang chủ</div>
+        <button class="neon-frame-btn" onclick="reserveSlot()">
+            Xác nhận đặt chỗ
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            </button>
     </div>
     <script src="../Reservation/Reservation.js"></script>
 </body>

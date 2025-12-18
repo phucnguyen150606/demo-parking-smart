@@ -4,64 +4,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../Main_UI/main.css">
+    <title>HULA</title>
+    <link rel="stylesheet" href="../Main_UI/css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
 </head>
 
 <body>
     <div class="header">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
         <div class="left-header">
             <div class="logo">
-                🚗 Smart Parking Dashboard
+                <img src="../Main_UI/img/logo.png" alt="">
             </div>
             <div class="search-box">
                 <input type="text" placeholder="Tìm kiếm..." />
             </div>
         </div>
         <div class="right-header">
-            <div class="nav">
-                <a href="#">Trang chủ</a>
-                <a href="#">Giới thiệu</a>
-                <a href="#">Liên hệ</a>
-                <a href="#">Tài khoản</a>
-            </div>
-
+            <nav class="menu">
+                <ul>
+                    <li><a href="../Main_UI/main.html"><i class="fa-solid fa-house"></i> Trang chủ</a></li>
+                    <li><a href="#"><i class="fa-solid fa-circle-info"></i> Giới thiệu</a></li>
+                    <li><a href="#"><i class="fa-solid fa-phone"></i> Liên hệ</a></li>
+                    <li><a href="../notification/notification.html"><i class="fa-solid fa-bell"></i> Thông báo</a></li>
+                    <li><a href="#"><i class="fa-solid fa-user"></i> Tài khoản</a></li>
+                </ul>
+            </nav>
         </div>
     </div>
 
     <div class="container">
 
         <div class="card" onclick="openPage('../Parking_Finder/parking.html')">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
             <div class="icon">🅿️</div>
             <h2>Parking Finder</h2>
             <p>Tìm bãi đỗ xe gần bạn.</p>
         </div>
 
         <div class="card" onclick="openPage('../Reservation/reservation.html')">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
             <div class="icon">📅</div>
             <h2>Reservation</h2>
             <p>Đặt chỗ trước theo bãi.</p>
         </div>
 
         <div class="card" onclick="openPage('../payment/payment.html')">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
             <div class="icon">💳</div>
             <h2>Payment</h2>
             <p>Thanh toán phí đỗ xe.</p>
         </div>
-        <!-- 
-        <div class="card" onclick="openPage('notification.html')">
-            <h2>Notification</h2>
-            <p>Thông báo đặt chỗ, thanh toán, trạng thái xe.</p>
-        </div> -->
 
     </div>
-    <div class="slideshow-container">
-        <img src="../Main_UI/img/parking_img1.png" class="slide">
-        <img src="../Main_UI/img/parking_img2.png" class="slide">
-        <img src="../Main_UI/img/parking_img3.jpg" class="slide">
-
+    <div class="swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="../Main_UI/img/parking_img1.png"></div>
+            <div class="swiper-slide"><img src="../Main_UI/img/parking_img2.png"></div>
+            <div class="swiper-slide"><img src="../Main_UI/img/parking_img3.jpg"></div>
+        </div>
     </div>
+    <footer class="footer">
+        <div class="footer-container">
 
+            <div class="footer-left">
+                <img src="../Main_UI/img/logo.png" alt="HULA Logo" class="footer-logo">
+                <p>Ứng dụng tìm kiếm & đặt chỗ bãi đỗ xe thông minh.</p>
+            </div>
+
+            <div class="footer-links">
+                <h4>Liên kết</h4>
+                <ul>
+                    <li><a href="#">Trang chủ</a></li>
+                    <li><a href="#">Giới thiệu</a></li>
+                    <li><a href="#">Liên hệ</a></li>
+                    <li><a href="#">Tài khoản</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h4>Liên hệ</h4>
+                <ul>
+                    <li><i class="fa-solid fa-phone"></i> 0123 456 789</li>
+                    <li><i class="fa-solid fa-envelope"></i> support@hula.com</li>
+                    <li><i class="fa-solid fa-location-dot"></i> TP. Hồ Chí Minh</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            © 2025 HULA Parking System — All rights reserved.
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="../Main_UI/main.js"></script>
 </body>
 

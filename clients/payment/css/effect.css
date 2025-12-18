@@ -1,0 +1,134 @@
+.bg-mask-vertical {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 400px;
+    background: url("../images/parking_img1.png") center/cover;
+    mask-image: linear-gradient(to bottom, black 40%, transparent 100%);
+    z-index: -1;
+}
+
+.logo::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 4px;
+}
+
+.logo::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -12px;
+    height: 4px;
+    width: 40%;
+    background: #1e90ff;
+    box-shadow: 0 0 20px #1e90ff;
+    /* xanh dương */
+    border-radius: 4px;
+    animation: loadingRun 1.2s infinite ease-in-out;
+}
+
+.menu a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 3px;
+    background: white;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+
+.menu a:hover::after {
+    width: 100%;
+}
+
+.method:hover {
+    border-color: #4CAF50;
+    background: #f0fff0;
+}
+
+.method.active {
+    border-color: #4CAF50;
+    background: #e6ffe6;
+}
+
+
+/* 4 cạnh neon */
+
+#payBtn {
+    position: relative;
+    padding: 14px 0;
+    margin-top: 10px;
+    width: 100%;
+    font-size: 18px;
+    color: #fff;
+    background: #0d47a1;
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+
+/* 4 cạnh neon */
+
+#payBtn span {
+    position: absolute;
+    display: block;
+}
+
+
+/* Cạnh trên */
+
+#payBtn span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, #00eaff);
+    animation: neonTop 1.5s linear infinite;
+}
+
+
+/* Cạnh phải */
+
+#payBtn span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #00eaff);
+    animation: neonRight 1.5s linear infinite;
+    animation-delay: 0.375s;
+}
+
+
+/* Cạnh dưới */
+
+#payBtn span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(270deg, transparent, #00eaff);
+    animation: neonBottom 1.5s linear infinite;
+    animation-delay: 0.75s;
+}
+
+
+/* Cạnh trái */
+
+#payBtn span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(0deg, transparent, #00eaff);
+    animation: neonLeft 1.5s linear infinite;
+    animation-delay: 1.125s;
+}
