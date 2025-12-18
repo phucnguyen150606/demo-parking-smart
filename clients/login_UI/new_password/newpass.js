@@ -13,7 +13,6 @@ function updatePassword(event) {
         alert("Mật khẩu phải có ít nhất 6 ký tự!");
         return;
     }
-
     if (password !== confirm) {
         alert("Mật khẩu xác nhận không khớp!");
         return;

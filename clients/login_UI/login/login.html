@@ -4,40 +4,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../login/css/login.css">
-</head>
 
+    <title>Đăng nhập</title>
+    <link rel="stylesheet" href="../login/login.css">
+
+</head>
 <body>
     <div class="bg-mask-vertical"></div>
     <div class="login-box">
         <div class="logo"><img src="../login/img/logo.png" alt=""></div>
         <h2>Đăng nhập</h2>
 
-        <form action="login.php" method="POST" onsubmit="login(event)">
-            <div class="input-group">
-                <input type="text" name="username" placeholder="Tên đăng nhập" required>
-            </div>
-
-            <div class="input-group">
-                <input type="password" name="password" placeholder="Mật khẩu" required>
-            </div>
-            <button class="neon-frame-btn">
-            Đăng nhập
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            </button>
+        <!-- Form chỉ gọi JS, không gửi trực tiếp -->
+        <form onsubmit="goLogin(event)">
+            <input type="text" class="username" name="user_name" placeholder="Tên đăng nhập" required>
+            <input type="password" class="password" name="password" placeholder="Mật khẩu" required>
+            <input type="submit" value="Đăng nhập" class="button">
         </form>
 
         <a href="../verify email/verifyemail.html">Quên mật khẩu?</a>
-
         <a href="../sign_up_UI/sign_up.html" class="signup">Đăng ký</a>
-
     </div>
 
-    <script src="../login/login.js"></script>
+    <script src="../login/login.js?v=2"></script>
+
 </body>
 
 </html>
