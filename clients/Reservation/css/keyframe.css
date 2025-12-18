@@ -8,3 +8,67 @@
         transform: scale(1);
     }
 }
+
+@keyframes loadingRun {
+    0% {
+        left: 25%;
+    }
+    50% {
+        left: 40%;
+    }
+    /* chạy qua */
+    100% {
+        left: 25%;
+    }
+    /* chạy lại */
+}
+
+@keyframes loadingRun {
+    0% {
+        left: 25%;
+    }
+    50% {
+        left: 40%;
+    }
+    /* chạy qua */
+    100% {
+        left: 25%;
+    }
+    /* chạy lại */
+}
+
+@keyframes neonTop {
+    from {
+        left: -100%;
+    }
+    to {
+        left: 100%;
+    }
+}
+
+@keyframes neonRight {
+    from {
+        top: -100%;
+    }
+    to {
+        top: 100%;
+    }
+}
+
+@keyframes neonBottom {
+    from {
+        right: -100%;
+    }
+    to {
+        right: 100%;
+    }
+}
+
+@keyframes neonLeft {
+    from {
+        bottom: -100%;
+    }
+    to {
+        bottom: 100%;
+    }
+}

@@ -1,6 +1,6 @@
 /* Màn hình <= 1024px (Tablet ngang) */
 
-@media (max-width:1024px) {
+@media (max-width: 1024px) {
     .menu {
         position: fixed;
         bottom: 0;
@@ -11,13 +11,14 @@
         z-index: 999;
     }
     .menu ul {
+        display: flex;
         justify-content: space-around;
-        gap: 0;
     }
     .menu a {
-        font-size: 14px;
+        display: flex;
         flex-direction: column;
-        /* icon trên chữ – kiểu mobile app */
+        align-items: center;
+        font-size: 14px;
         gap: 4px;
     }
     .menu i {
@@ -28,99 +29,33 @@
 
 /* Tablet dọc + điện thoại lớn (<= 768px) */
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
     .menu {
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        padding: 10px 0;
-        background: #0d6efd;
-        z-index: 999;
-    }
-    .menu ul {
-        justify-content: space-around;
-        gap: 0;
+        padding: 8px 0;
     }
     .menu a {
-        font-size: 14px;
-        flex-direction: column;
-        /* icon trên chữ – kiểu mobile app */
-        gap: 4px;
+        font-size: 13px;
     }
     .menu i {
-        font-size: 18px;
-    }
-    .menu {
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        padding: 10px 0;
-        background: #0d6efd;
-        z-index: 999;
-    }
-    .menu ul {
-        justify-content: space-around;
-        gap: 0;
-    }
-    .menu a {
-        font-size: 14px;
-        flex-direction: column;
-        /* icon trên chữ – kiểu mobile app */
-        gap: 4px;
-    }
-    .menu i {
-        font-size: 18px;
+        font-size: 20px;
     }
 }
 
 
 /* Điện thoại nhỏ (<= 480px) */
 
-@media (max-width:480px) {
+@media (max-width: 480px) {
     .menu {
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        padding: 10px 0;
-        background: #0d6efd;
-        z-index: 999;
-    }
-    .menu ul {
-        justify-content: space-around;
-        gap: 0;
+        padding: 6px 0;
     }
     .menu a {
-        font-size: 14px;
-        flex-direction: column;
-        /* icon trên chữ – kiểu mobile app */
-        gap: 4px;
+        font-size: 11px;
     }
     .menu i {
-        font-size: 18px;
+        font-size: 22px;
     }
-    .menu {
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        padding: 10px 0;
-        background: #0d6efd;
-        z-index: 999;
-    }
-    .menu ul {
-        justify-content: space-around;
-        gap: 0;
-    }
-    .menu a {
-        font-size: 14px;
-        flex-direction: column;
-        /* icon trên chữ – kiểu mobile app */
-        gap: 4px;
-    }
-    .menu i {
-        font-size: 18px;
+    /* Ẩn chữ – chỉ giữ icon */
+    .menu a span {
+        display: none;
     }
 }

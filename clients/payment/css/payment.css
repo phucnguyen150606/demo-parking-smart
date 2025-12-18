@@ -6,11 +6,11 @@ body {
     padding: 0;
     margin: 0;
     background: #0f1c30;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .menu {
-    background: #0d6efd;
+    background: #3A8DFF;
     padding: 5px 0;
     text-align: center;
 }
@@ -43,6 +43,12 @@ body {
     width: 400px;
     text-align: center;
     animation: scaleUp 0.5s ease;
+}
+
+.logo {
+    height: 80px;
+    position: relative;
+    margin-bottom: 20px;
 }
 
 h2,
