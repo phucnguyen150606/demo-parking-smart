@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Đăng nhập</title>
     <link rel="stylesheet" href="../login/login.css">
 </head>
 
@@ -12,18 +12,18 @@
     <div class="login-box">
         <h2>Đăng nhập</h2>
 
-        <form action="login.php" method="POST" onsubmit="login(event)">
-            <input type="text" name="username" placeholder="Tên đăng nhập" required>
-            <input type="password" name="password" placeholder="Mật khẩu" required>
+        <!-- Form chỉ gọi JS, không gửi trực tiếp -->
+        <form onsubmit="goLogin(event)">
+            <input type="text" class="username" name="user_name" placeholder="Tên đăng nhập" required>
+            <input type="password" class="password" name="password" placeholder="Mật khẩu" required>
             <input type="submit" value="Đăng nhập" class="button">
         </form>
 
         <a href="../verify email/verifyemail.html">Quên mật khẩu?</a>
-
         <a href="../sign_up_UI/sign_up.html" class="signup">Đăng ký</a>
-
     </div>
-    <script src="../login/login.js"></script>
+
+    <script src="../login/login.js?v=2"></script>
 </body>
 
 </html>
