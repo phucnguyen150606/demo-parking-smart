@@ -1,11 +1,6 @@
 /* Màn hình <= 1024px (Tablet ngang) */
 
-@media (max-width:1024px) {
-    .container {
-        grid-template-columns: repeat(2, 1fr);
-        padding-bottom: 100px;
-        /* số px tùy vào chiều cao menu */
-    }
+@media (max-width: 1024px) {
     .menu {
         position: fixed;
         bottom: 0;
@@ -16,34 +11,30 @@
         z-index: 999;
     }
     .menu ul {
+        display: flex;
         justify-content: space-around;
         gap: 0;
     }
     .menu a {
-        font-size: 14px;
+        display: flex;
         flex-direction: column;
-        /* icon trên chữ – kiểu mobile app */
+        align-items: center;
+        font-size: 14px;
         gap: 4px;
     }
     .menu i {
         font-size: 18px;
     }
-    .footer-logo {
-        margin: 0 auto;
-    }
+    .container,
     .footer-bottom {
-        padding-bottom: 100px
+        padding-bottom: 90px;
     }
 }
 
 
 /* Tablet dọc + điện thoại lớn (<= 768px) */
 
-@media (max-width:768px) {
-    .container {
-        padding-bottom: 100px;
-        /* số px tùy vào chiều cao menu */
-    }
+@media (max-width: 768px) {
     /* Header */
     .header {
         flex-direction: column;
@@ -51,66 +42,21 @@
         gap: 10px;
         padding: 20px;
     }
-    .menu {
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        padding: 10px 0;
-        background: #0d6efd;
-        z-index: 999;
-    }
-    .menu ul {
-        justify-content: space-around;
-        gap: 0;
-    }
-    .menu a {
-        font-size: 14px;
-        flex-direction: column;
-        /* icon trên chữ – kiểu mobile app */
-        gap: 4px;
-    }
-    .menu i {
-        font-size: 18px;
-    }
     .search-box input {
         width: 100%;
     }
-    .menu {
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        padding: 10px 0;
-        background: #0d6efd;
-        z-index: 999;
-    }
-    .menu ul {
-        justify-content: space-around;
-        gap: 0;
-    }
-    .menu a {
-        font-size: 14px;
-        flex-direction: column;
-        /* icon trên chữ – kiểu mobile app */
-        gap: 4px;
-    }
-    .menu i {
-        font-size: 18px;
-    }
-    /* Container */
+    /* Grid */
     .container {
         padding: 15px;
-        grid-template-columns: repeat(2, 2fr);
+        grid-template-columns: repeat(2, 1fr);
         gap: 15px;
     }
     /* Card */
+    .card {
+        padding: 15px;
+    }
     .card .icon {
         font-size: 25px;
-    }
-    .card {
-        height: 70%;
-        padding: 15px;
     }
     .card h2 {
         font-size: 18px;
@@ -118,22 +64,18 @@
     .footer-logo {
         margin: 0 auto;
     }
-    .footer-bottom {
-        padding-bottom: 100px
-    }
 }
 
 
 /* Điện thoại nhỏ (<= 480px) */
 
-@media (max-width:480px) {
-    .container {
-        padding-bottom: 100px;
-        /* số px tùy vào chiều cao menu */
-    }
+@media (max-width: 480px) {
     .header {
         font-size: 18px;
         padding: 15px;
+    }
+    .container {
+        grid-template-columns: 1fr;
     }
     .card {
         padding: 18px;
@@ -144,11 +86,5 @@
     .search-box input {
         padding: 6px;
         font-size: 14px;
-    }
-    .footer-logo {
-        margin: 0 auto;
-    }
-    .footer-bottom {
-        padding-bottom: 100px
     }
 }

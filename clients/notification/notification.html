@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thông báo</title>
+    <link rel="stylesheet" href="css/notification.css">
+</head>
+
+<body>
+    <div class="bg-mask-vertical"></div>
+    <div class="header">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <nav class="menu">
+            <ul>
+                <li><a href="../Main_UI/main.html"><i class="fa-solid fa-house"></i> Trang chủ</a></li>
+                <li><a href="#"><i class="fa-solid fa-circle-info"></i> Giới thiệu</a></li>
+                <li><a href="#"><i class="fa-solid fa-phone"></i> Liên hệ</a></li>
+                <li><a href="notification.html"><i class="fa-solid fa-bell"></i> Thông báo</a></li>
+                <li><a href="#"><i class="fa-solid fa-user"></i> Tài khoản</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="container">
+        <div class="content-header">Thông báo</div>
+        <div class="filter-bar">
+            <button class="filter-btn active" data-filter="all">Tất cả</button>
+            <button class="filter-btn" data-filter="today">Hôm nay</button>
+            <button class="filter-btn" data-filter="week">7 ngày</button>
+            <button class="filter-btn" data-filter="month">Tháng</button>
+        </div>
+        <div class="notification-list">
+            <div class="notification-item unread" data-time="today">
+                <div class="icon">🔔</div>
+                <div class="content">
+                    <h4>Đơn hàng đã xác nhận</h4>
+                    <p>Đơn hàng #12345 của bạn đã được xác nhận.</p>
+                    <div class="time">5 phút trước</div>
+                </div>
+            </div>
+
+            <div class="notification-item" data-time="month">
+                <div class="icon">🎉</div>
+                <div class="content">
+                    <h4>Khuyến mãi mới</h4>
+                    <p>Giảm giá 20% cho laptop hôm nay.</p>
+                    <div class="time">2 tháng trước</div>
+                </div>
+            </div>
+
+            <div class="notification-item" data-time="week">
+                <div class="icon">📦</div>
+                <div class="content">
+                    <h4>Đơn hàng đang giao</h4>
+                    <p>Shipper đang trên đường giao hàng.</p>
+                    <div class="time">1 tuần trước</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="notification.js"></script>
+</body>
+
+</html>
